@@ -1,0 +1,80 @@
+  /* Global */
+  :root {
+    /* Color */
+    --color-white: #ffffff;
+    --color-dark-white: #CCCCCC;
+    --color-blue: #61d0ff;
+    --color-dark-gray: #434343;
+    --color-black: #000000;
+  
+    /* Font size */
+    --font-large: 24px;
+    --font-medium: 20px;
+    --font-regular: 16px;
+    --font-small: 12px;
+  
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-regular: 400;
+  
+    /* Size */
+  
+  
+    /* Animation */
+  
+  
+  }
+  
+  /* Universal tags */
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  #app {
+    background-color: var(--color-dark-gray);
+    width: 100%;
+    height: 100vh;
+  }
+  
+  
+  /* Typography */
+  
+  h2 {
+    font-size: var(--font-large);
+  }
+  
+  h3 {
+    font-size: var(--font-medium);
+  }
+  
+  h4 {
+    font-size: var(--font-regular);
+  }
+  
+  p {
+    font-size: var(--font-small);
+  }
+  
