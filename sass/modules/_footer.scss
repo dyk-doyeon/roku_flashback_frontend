@@ -1,0 +1,38 @@
+#footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.backToTop {
+  margin: auto;
+}
+
+.backToTop a {
+  display: flex;
+  flex-direction: row;
+  color: var(--color-white);
+  padding: 20px;
+  text-align: center;
+}
+
+.backToTop h3 {
+  margin-right: 10px;
+}
+
+.backToTop i {
+  font-size: var(--font-large);
+}
+
+#footer h2, h4, p {
+  color: var(--color-blue);
+  margin-bottom: 20px;
+}
+
+#footer h4 {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
