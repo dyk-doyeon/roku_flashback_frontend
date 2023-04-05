@@ -1,6 +1,6 @@
 // imports always go at the top
 import LogInPage from './components/TheLoginComponent.js';
-import UsersComponent from './components/TheUserComponent.js';
+// import UsersComponent from './components/TheUserComponent.js';
 import AllUsersPage from './components/TheAllUsersComponent.js';
 import DefaultHome from './components/TheHomePage.js';
 import KidsHome from './components/TheKidsHomePage.js';
@@ -37,21 +37,11 @@ const router = VueRouter.createRouter({
       name: 'kidshome', 
       component: KidsHome 
     },
-
-    // { 
-    //   path: '/users', // browser location bar looks like this
-    //   name: 'users', // for programmatic navigation
-    //   component: UsersComponent // the component to render
-    // },
-    // put a catch-all for broken routes at the very bottom of your routes stack
-    // if Vue Router can't match a give route, it'll display a generic error component
-    // { 
-    //   path: '/:pathMatch(.*)*', // browser location bar looks like this
-    //   name: 'error', // for programmatic navigation
-    //   component: ErrorPage // the component to render
-    // }
   ]
 })
+
+
+
 
 // 5. Create and mount the root instance.
 const app = Vue.createApp({

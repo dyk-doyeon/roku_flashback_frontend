@@ -6,10 +6,12 @@ export default {
   template: `
     <section class="user-panel">
       <div class="gobackbtn">
-        <a href="/"><img src="/images/" alt="Go back to previous page button"></a>
-      <div>
+        <a href="/">
+          <i class="fa-solid fa-left-long"></i>
+        </a>
+      </div>
       <div class="main__logo">
-        <img src="images/" alt="Roku logo">
+        <h2>_ROKU FLASHBACK_</h2>
       </div>
 
       <div class="user__box">

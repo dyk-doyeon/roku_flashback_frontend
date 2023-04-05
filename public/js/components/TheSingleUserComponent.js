@@ -30,7 +30,7 @@ export default {
       //   targetHome = "home";
       // }
 
-      let targetHome = (this.user.permissions < 4) ? "kidshome" : "home";
+      let targetHome = (this.user.permissions < 18) ? "kidshome" : "home";
 
       this.$router.push({ name: targetHome });
       // debugger;

@@ -1,0 +1,173 @@
+#hero__img {
+  width: 100%;
+  border: 1px solid var(--color-blue);
+  height: 600px;
+  background-image: url(../images/hero.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero__kid__img {
+  width: 100%;
+  border: 1px solid var(--color-blue);
+  height: 600px;
+  background-image: url(../images/hero_baby.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-dark-gray);
+  margin: 50px 0;
+}
+
+#home h3 {
+  color: var(--color-dark-gray);
+  background-color: var(--color-blue);
+  width: 220px;
+  text-align: center;
+  padding: 20px 15px;
+  margin-bottom: 30px;
+}
+
+.music {
+  margin: 20px;
+}
+
+.music__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.music__box__item img {
+  width: 200px;
+}
+
+.topFive {
+  margin: 20px;
+}
+
+.topFive__movie {
+  display: flex;
+  flex-direction: row;
+  width: 1300px;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.topFive__movie li {
+  width: 300px;
+  margin-right: 50px;
+}
+
+.topFive__movie li img {
+  width: 200px;
+}
+
+.topFive__movie li:first-child {
+  display: none;
+}
+
+.topFive__movie li:nth-child(2) {
+  display: none;
+}
+
+.topFive__movie li:nth-child(5) {
+  display: none;
+}
+
+.topFive__movie li:last-child {
+  display: none;
+}
+
+.topFive__movie img {
+  width: 100%;
+  border: 1px solid var(--color-blue);
+}
+
+.topFive__movie h2 {
+  margin-top: 10px;
+  color: var(--color-blue);
+  text-align: center;
+  font-size: var(--font-medium);
+}
+
+.number {
+  color: var(--color-blue);
+  font-size: 400px;
+  position: relative;
+  top: -350px;
+  left: -100px;
+}
+
+
+
+//TV Show
+
+.tvShows {
+  margin: 20px 10px 50px 10px;
+}
+
+.tvshows__list {
+  display: flex;
+  flex-direction: row;
+  width: 1300px;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.tvshows__list li {
+  width: 300px;
+  margin-right: 50px;
+}
+
+.tvshows__list li img {
+  width: 200px;
+}
+
+.tvshows__list li:first-child {
+  display: none;
+}
+
+.tvshows__list li:nth-child(2) img {
+  width: 220px;
+}
+
+
+.tvshows__list li:nth-child(3) {
+  display: none;
+}
+
+.tvshows__list li:nth-child(4) {
+  display: none;
+}
+
+// .tvshows__list li:nth-child(7) {
+//   display: none;
+// }
+
+.tvshows__list img {
+  width: 100%;
+  border: 1px solid var(--color-blue);
+}
+
+.tvshows__list h2 {
+  margin-top: 10px;
+  color: var(--color-blue);
+  text-align: center;
+  font-size: var(--font-medium);
+}
