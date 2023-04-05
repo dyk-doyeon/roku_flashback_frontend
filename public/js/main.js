@@ -4,6 +4,7 @@ import LogInPage from './components/TheLoginComponent.js';
 import AllUsersPage from './components/TheAllUsersComponent.js';
 import DefaultHome from './components/TheHomePage.js';
 import KidsHome from './components/TheKidsHomePage.js';
+import Showbox from "./components/TheShowBox.js";
 // import ErrorPage from './modules/ErrorPage.js';
 
 
@@ -40,9 +41,6 @@ const router = VueRouter.createRouter({
   ]
 })
 
-
-
-
 // 5. Create and mount the root instance.
 const app = Vue.createApp({
   mounted() {
@@ -55,11 +53,21 @@ const app = Vue.createApp({
 
   data() {
     return {
-      authenticated: false
+      authenticated: false,
+      loadBData: {},
+      show: false
     }
   },
 
+  components: {
+    showbox: Showbox
+  },
+
+
   methods: {
+    loadShowBox() {
+      this.show = true;
+    },
     logUserOut() {
       this.authenticated = false;
       window.localStorage.removeItem('user');
@@ -70,18 +78,6 @@ const app = Vue.createApp({
       this.authenticated = true;
     }
   }
-
-  // methods: {
-  //   tryRouterPush() {
-  //     // programmatic routing
-  //     this.$router.push({
-  //       name: 'users'
-  //     })
-  //   }
-  // }
-
 });
-// Make sure to _use_ the router instance to make the
-// whole app router-aware.
 app.use(router);
 app.mount('#app')

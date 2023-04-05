@@ -102,13 +102,13 @@
   font-size: var(--font-medium);
 }
 
-.number {
-  color: var(--color-blue);
-  font-size: 400px;
-  position: relative;
-  top: -350px;
-  left: -100px;
-}
+// .number {
+//   color: var(--color-blue);
+//   font-size: 400px;
+//   position: relative;
+//   top: -350px;
+//   left: -100px;
+// }
 
 
 
@@ -171,3 +171,124 @@
   text-align: center;
   font-size: var(--font-medium);
 }
+
+
+// Kids Movie
+.topFive__kid {
+  margin: 20px;
+}
+
+.topFive__movie__kid {
+  display: flex;
+  flex-direction: row;
+  width: 1300px;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.topFive__movie__kid li {
+  width: 300px;
+  margin-right: 50px;
+}
+
+.topFive__movie__kid li img {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+.topFive__movie__kid li:first-child {
+  display: none;
+}
+
+.topFive__movie__kid li:nth-child(2) {
+  display: none;
+}
+
+.topFive__movie__kid li:nth-child(7) {
+  display: none;
+}
+
+.topFive__movie__kid li:last-child {
+  display: none;
+}
+
+.topFive__movie__kid img {
+  width: 100%;
+  border: 1px solid var(--color-blue);
+}
+
+.topFive__movie__kid h2 {
+  margin-top: 10px;
+  color: var(--color-blue);
+  text-align: center;
+  font-size: var(--font-medium);
+}
+
+
+
+// Kids Tv Show
+
+.tvShows__kid {
+  margin: 20px 10px 50px 10px;
+}
+
+.tvshows__list__kid {
+  display: flex;
+  flex-direction: row;
+  width: 1300px;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.tvshows__list__kid li {
+  width: 300px;
+  margin-right: 50px;
+}
+
+.tvshows__list__kid li img {
+  width: 200px;
+}
+
+.tvshows__list__kid li:first-child {
+  display: none;
+}
+
+.tvshows__list__kid li:nth-child(2) img {
+  width: 180px;
+}
+
+
+// .tvshows__list__kid li:nth-child(3) {
+//   display: none;
+// }
+
+.tvshows__list__kid li:nth-child(4) {
+  display: none;
+}
+
+.tvshows__list__kid li:nth-child(7) {
+  display: none;
+}
+
+.tvshows__list__kid img {
+  width: 100%;
+  border: 1px solid var(--color-blue);
+}
+
+.tvshows__list__kid h2 {
+  margin-top: 10px;
+  color: var(--color-blue);
+  text-align: center;
+  font-size: var(--font-medium);
+}
+
+

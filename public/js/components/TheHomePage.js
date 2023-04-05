@@ -1,6 +1,8 @@
 export default {
   name: 'TheHomePageComponent',
 
+  emits: ['loadbdata'],
+
   template: `
   <!--Navbar-->
   <nav id="navbar">
@@ -31,14 +33,14 @@ export default {
     <!--Top 5-->
     <div class="topFive">
       <h3>TOP5_IN_CANADA</h3>
-      <div class="topFive__movie">
+      <div class="topFive__movie" @click="loadBData">
       </div>
     </div>
 
     <!--TV Show-->
     <div class="tvShows">
       <h3>TV_SHOWS</h3>
-      <div class="tvshows__list"></div>
+      <div class="tvshows__list" @click="loadBData"></div>
     </div>
 
     <!--Music-->
@@ -78,6 +80,12 @@ export default {
     <p>Copyright © 2023 _ROKU FLASHBACK_</p>
   </footer>
   `,
+
+  methods: {
+    loadBData() {
+      this.$emit('loadbdata');
+    }
+  },
 
   created() {
     // Movies 

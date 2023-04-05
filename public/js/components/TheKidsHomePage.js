@@ -29,15 +29,15 @@ export default {
   <!--Main-->
   <section id="home">
     <!--Top 5-->
-    <div class="topFive">
+    <div class="topFive__kid">
       <h3>TOP5_IN_CANADA</h3>
-      <div class="topFive__movie"></div>
+      <div class="topFive__movie__kid"></div>
     </div>
 
     <!--TV Show-->
-    <div class="tvShows">
+    <div class="tvShows__kid">
       <h3>TV_SHOWS</h3>
-      <div class="tvshows__list"></div>
+      <div class="tvshows__list__kid"></div>
     </div>
 
     <!--Music-->
@@ -82,7 +82,7 @@ export default {
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '27f4f88fb9msh56e4535fa65bdfap1f539bjsn7c01bb61481d',
+        'X-RapidAPI-Key': 'e14f0113e7mshe7c65440d110ba3p15c97ajsn8acb5edb683d',
         'X-RapidAPI-Host': 'online-movie-database.p.rapidapi.com'
       }
     };
@@ -95,9 +95,9 @@ export default {
         list.map((item) => {
           const name = item.l;
           const poster = item.i.imageUrl;
-          const movie = `<li><img src="${poster}"<h2>${name}</h2></li>`;
-          document.querySelector(".topFive__movie").innerHTML += movie;
-          document.querySelector(".tvshows__list").innerHTML += movie;
+          const movie = `<li><img src="${poster}"><h2>${name}</h2></li>`;
+          document.querySelector(".topFive__movie__kid").innerHTML += movie;
+          document.querySelector(".tvshows__list__kid").innerHTML += movie;
         })
       })
       .catch(err => console.error(err));
