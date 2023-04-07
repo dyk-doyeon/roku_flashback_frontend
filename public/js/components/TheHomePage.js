@@ -1,3 +1,5 @@
+import Showbox from "./TheShowBox.js";
+
 export default {
   name: 'TheHomePageComponent',
 
@@ -5,7 +7,7 @@ export default {
   <!--Navbar-->
   <nav id="navbar">
   <div class="navbar__box">
-    <h2>_ROKU FLASHBACK_</h2>
+    <a href="/"><h2>_ROKU FLASHBACK_</h2></a>
     <ul class="navbar__menu">
       <li class="navbar__menu__item"><a href="/"><h4>MOVIES</h4></a></li>
       <li class="navbar__menu__item"><a href="/"><h4>TV_SERIES</h4></a></li>
@@ -17,7 +19,9 @@ export default {
       <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <div class="navbar__user">
-      <img src="images/amelia.png" alt="User Image">
+      <a href="/">
+        <img src="images/amelia.png" alt="User Image">
+      </a>
     </div>
   </div>
   </nav>
@@ -31,14 +35,16 @@ export default {
     <!--Top 5-->
     <div class="topFive">
       <h3>TOP5_IN_CANADA</h3>
-      <div class="topFive__movie">
+      <div class="topFive__movie" @click="showBox">
       </div>
     </div>
+
+    <Showbox :visible="showBoxVisible" @close-box="closeBox"></Showbox>
 
     <!--TV Show-->
     <div class="tvShows">
       <h3>TV_SHOWS</h3>
-      <div class="tvshows__list"></div>
+      <div class="tvshows__list" @click="showBox"></div>
     </div>
 
     <!--Music-->
@@ -79,6 +85,25 @@ export default {
   </footer>
   `,
 
+  data() {
+    return {
+      showBoxVisible: false,
+    };
+  },
+
+  components: {
+    Showbox,
+  },
+
+  methods: {
+    showBox() {
+      this.showBoxVisible = true;
+    },
+    closeBox() {
+      this.showBoxVisible = false;
+    },
+  },
+
   created() {
     // Movies 
     const options = {
@@ -105,3 +130,4 @@ export default {
       .catch(err => console.error(err));
   }
 }
+

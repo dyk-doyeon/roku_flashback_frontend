@@ -40,9 +40,6 @@ const router = VueRouter.createRouter({
   ]
 })
 
-
-
-
 // 5. Create and mount the root instance.
 const app = Vue.createApp({
   mounted() {
@@ -50,12 +47,6 @@ const app = Vue.createApp({
     if(window.localStorage.getItem('user')) {
       this.authenticated = true;
       this.$router.push({name: 'allusers'});
-    }
-  },
-
-  data() {
-    return {
-      authenticated: false
     }
   },
 
@@ -70,18 +61,6 @@ const app = Vue.createApp({
       this.authenticated = true;
     }
   }
-
-  // methods: {
-  //   tryRouterPush() {
-  //     // programmatic routing
-  //     this.$router.push({
-  //       name: 'users'
-  //     })
-  //   }
-  // }
-
 });
-// Make sure to _use_ the router instance to make the
-// whole app router-aware.
 app.use(router);
 app.mount('#app')

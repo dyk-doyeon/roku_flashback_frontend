@@ -1,3 +1,5 @@
+import Showbox from "./TheShowBoxForKids.js";
+
 export default {
   name: 'TheKidsHomePageComponent',
 
@@ -5,7 +7,7 @@ export default {
   <!--Navbar-->
   <nav id="navbar">
   <div class="navbar__box">
-    <h2>_ROKU FLASHBACK_</h2>
+    <a href="/"><h2>_ROKU FLASHBACK_</h2></a>
     <ul class="navbar__menu">
       <li class="navbar__menu__item"><a href="/"><h4>MOVIES</h4></a></li>
       <li class="navbar__menu__item"><a href="/"><h4>TV_SERIES</h4></a></li>
@@ -17,7 +19,9 @@ export default {
       <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <div class="navbar__user">
-      <img src="images/mia.png" alt="User Image">
+      <a href="/">
+        <img src="images/mia.png" alt="User Image">
+      </a>
       </div>
   </div>
   </nav>
@@ -29,15 +33,17 @@ export default {
   <!--Main-->
   <section id="home">
     <!--Top 5-->
-    <div class="topFive">
+    <div class="topFive__kid">
       <h3>TOP5_IN_CANADA</h3>
-      <div class="topFive__movie"></div>
+      <div class="topFive__movie__kid" @click="showBox"></div>
     </div>
 
+    <Showbox :visible="showBoxVisible" @close-box="closeBox"></Showbox>
+
     <!--TV Show-->
-    <div class="tvShows">
+    <div class="tvShows__kid">
       <h3>TV_SHOWS</h3>
-      <div class="tvshows__list"></div>
+      <div class="tvshows__list__kid" @click="showBox"></div>
     </div>
 
     <!--Music-->
@@ -77,12 +83,31 @@ export default {
   </footer>
   `,
 
+  data() {
+    return {
+      showBoxVisible: false,
+    };
+  },
+
+  components: {
+    Showbox,
+  },
+
+  methods: {
+    showBox() {
+      this.showBoxVisible = true;
+    },
+    closeBox() {
+      this.showBoxVisible = false;
+    },
+  },
+
   created() {
     // Movies 
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '27f4f88fb9msh56e4535fa65bdfap1f539bjsn7c01bb61481d',
+        'X-RapidAPI-Key': 'e14f0113e7mshe7c65440d110ba3p15c97ajsn8acb5edb683d',
         'X-RapidAPI-Host': 'online-movie-database.p.rapidapi.com'
       }
     };
@@ -95,9 +120,9 @@ export default {
         list.map((item) => {
           const name = item.l;
           const poster = item.i.imageUrl;
-          const movie = `<li><img src="${poster}"<h2>${name}</h2></li>`;
-          document.querySelector(".topFive__movie").innerHTML += movie;
-          document.querySelector(".tvshows__list").innerHTML += movie;
+          const movie = `<li><img src="${poster}"><h2>${name}</h2></li>`;
+          document.querySelector(".topFive__movie__kid").innerHTML += movie;
+          document.querySelector(".tvshows__list__kid").innerHTML += movie;
         })
       })
       .catch(err => console.error(err));
