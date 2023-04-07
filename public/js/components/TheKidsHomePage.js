@@ -7,6 +7,7 @@ export default {
   <!--Navbar-->
   <nav id="navbar">
   <div class="navbar__box">
+    <i class="fa-solid fa-ellipsis-vertical onlyTablet"></i>
     <a href="/"><h2>_ROKU FLASHBACK_</h2></a>
     <ul class="navbar__menu">
       <li class="navbar__menu__item"><a href="/"><h4>MOVIES</h4></a></li>
@@ -22,7 +23,11 @@ export default {
       <a href="/">
         <img src="images/mia.png" alt="User Image">
       </a>
-      </div>
+    </div>
+  </div>
+  <div class="onlyTabletInput">
+    <input>
+    <i class="fa-solid fa-magnifying-glass"></i>
   </div>
   </nav>
 

@@ -7,13 +7,13 @@
 }
 
 .videoBox {
-  width: 1070px;
+  width: 80%;
   height: 600px;
   margin: auto;
 }
 
 .videoBox__kid {
-  width: 1070px;
+  width: 100%;
   height: 620px;
   margin: auto;
 }
@@ -45,7 +45,7 @@
   flex-direction: row;
   justify-content: space-between;
 
-  width: 1070px;
+  width: 75%;
   padding: 20px;
   color: var(--color-blue);
 
@@ -58,7 +58,7 @@
   flex-direction: row;
   justify-content: space-between;
 
-  width: 1070px;
+  width: 95%;
   padding: 20px;
   color: var(--color-blue);
 
@@ -70,15 +70,16 @@
   display: flex;
   flex-direction: row;
   margin-top: 20px;
+  padding-left: 20px;
 }
 
 .desBox__first h4 {
   margin: 7px 0 0 5px;
 }
 
-.desBox__second {
-  margin-left: -300px;
-}
+// .desBox__second {
+   // margin-left: -300px;
+// }
 
 .desBox__second p {
   width: 300px;
