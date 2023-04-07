@@ -4,7 +4,6 @@ import LogInPage from './components/TheLoginComponent.js';
 import AllUsersPage from './components/TheAllUsersComponent.js';
 import DefaultHome from './components/TheHomePage.js';
 import KidsHome from './components/TheKidsHomePage.js';
-import Showbox from "./components/TheShowBox.js";
 // import ErrorPage from './modules/ErrorPage.js';
 
 
@@ -51,23 +50,7 @@ const app = Vue.createApp({
     }
   },
 
-  data() {
-    return {
-      authenticated: false,
-      loadBData: {},
-      show: false
-    }
-  },
-
-  components: {
-    showbox: Showbox
-  },
-
-
   methods: {
-    loadShowBox() {
-      this.show = true;
-    },
     logUserOut() {
       this.authenticated = false;
       window.localStorage.removeItem('user');

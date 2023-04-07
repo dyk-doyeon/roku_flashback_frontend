@@ -1,14 +1,28 @@
 .showBox {
   width: 100%;
+  height: 100vh;
   background-color: var(--color-dark-gray);
   position: absolute;
-  top: 50%;
+  top: 800px;
 }
 
 .videoBox {
   width: 1070px;
   height: 600px;
   margin: auto;
+}
+
+.videoBox__kid {
+  width: 1070px;
+  height: 620px;
+  margin: auto;
+}
+
+.videoBox__kid video {
+  width: 100%;
+  height: 600px;
+  padding-bottom: 30px;
+  border: 1px solid var(--color-blue);
 }
 
 .videoBox video {
@@ -27,6 +41,19 @@
 }
 
 .descriptionBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 1070px;
+  padding: 20px;
+  color: var(--color-blue);
+
+  position: absolute;
+  top: 510px;
+}
+
+.descriptionBox__kid {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -91,7 +118,7 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: -5px;
-  height: 360px;
+  height: 420px;
 }
 
 .aboutBox__left {
@@ -101,6 +128,7 @@
 
 .aboutBox__left h3 {
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .aboutBox__left {
