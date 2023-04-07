@@ -15,8 +15,8 @@
 - Built the front-end and back-end of the Roku website
 - Created table for Roku User
 
-[Front-end](https://github.com/dyk-doyeon/roku_flashback_frontend.git)
-[back-end](https://github.com/dyk-doyeon/rokuUMS.git)
+- [Front-end](https://github.com/dyk-doyeon/roku_flashback_frontend.git)
+- [back-end](https://github.com/dyk-doyeon/rokuUMS.git)
 
 ### Contribute
 
@@ -42,5 +42,5 @@ Copyright © 2022 [Roku Flashback](https://github.com/dyk-doyeon/roku_flashback_
 
 ### Team Member
 
-Designer - [Sian Kim](https://github.com/sianmosey)
-Developer - [Doyeon Kim](https://github.com/dyk-doyeon)
+- Designer - [Sian Kim](https://github.com/sianmosey)
+- Developer - [Doyeon Kim](https://github.com/dyk-doyeon)
