@@ -56,16 +56,16 @@ export default {
       <h3>MUSIC</h3>
       <div class="music__box">
         <div class="music__box__item">
-          <img src="images/mia.png" alt="Music Image">
+          <img src="images/music_baby_1.png" alt="Music Image">
         </div>
         <div class="music__box__item">
-          <img src="images/mia.png" alt="Music Image">
+          <img src="images/music_baby_2.png" alt="Music Image">
         </div>
         <div class="music__box__item">
-          <img src="images/mia.png" alt="Music Image">
+          <img src="images/music_baby_3.png" alt="Music Image">
         </div>
         <div class="music__box__item">
-          <img src="images/mia.png" alt="Music Image">
+          <img src="images/music_baby_4.png" alt="Music Image">
         </div>
       </div>
     </div>
